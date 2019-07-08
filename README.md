@@ -2,8 +2,8 @@
 
 ## Init
 * `$ npm install`
-* `$ npm run db:migrate`
-* `$ npm run db:seed`
+* `$ npm run migrate`
+* `$ npm run seed`
 
 ## Example
 * `$ npx sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string` generate model user
