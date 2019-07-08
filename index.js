@@ -1,8 +1,8 @@
 'use strict'
 
-const sequelize = require('./sequelize');
+const db = require('./models/index');
 
-sequelize.authenticate().then(() => {
+db.sequelize.authenticate().then(() => {
     console.log('Connection has been established successfully.');
 }).catch(err => {
     console.error('Unable to connect to the database:', err);
