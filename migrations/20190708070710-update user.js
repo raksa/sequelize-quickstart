@@ -4,7 +4,7 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.sequelize.transaction((t) => {
       return Promise.all([
-        queryInterface.addColumn('Users', 'password', {
+        queryInterface.addColumn('users', 'password', {
           allowNull: false,
           type: Sequelize.STRING,
         }, { transaction: t }),
@@ -15,7 +15,7 @@ module.exports = {
   down: (queryInterface, Sequelize) => {
     return queryInterface.sequelize.transaction((t) => {
       return Promise.all([
-        queryInterface.removeColumn('Users', 'password', { transaction: t }),
+        queryInterface.removeColumn('users', 'password', { transaction: t }),
       ]);
     });
   }
