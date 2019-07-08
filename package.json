@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate": "npx sequelize-cli db:migrate"
+    "migrate": "npx sequelize db:migrate",
+    "seed": "npx sequelize db:seed:all"
   },
   "author": "",
   "license": "ISC"
