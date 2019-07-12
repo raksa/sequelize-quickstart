@@ -7,5 +7,4 @@ const config = {
         dialect: process.env.DB_DIALECT,
     }
 };
-console.log(config)
 module.exports = config;
